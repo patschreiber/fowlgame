@@ -3,3 +3,10 @@
 
 %p
   = @tweeted
+  = @tweet_timeline
+  - @tweet_timeline.each do |tweet|
+    = tweet.user.screen_name
+    = tweet.text
+    %br
+    %br
+%p
